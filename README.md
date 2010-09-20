@@ -2,7 +2,8 @@
 
 My blog, website and everything in between.
 
-Made using
+Made using:
+
 * [Jekyll](http://github.com/mojombo/jekyll)
 
 ## License
