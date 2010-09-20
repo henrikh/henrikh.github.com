@@ -1,0 +1,31 @@
+---
+layout: default
+blog: true
+---
+
+<div id="post">
+  <h1>{{ page.title }}</h1>
+  <div class="gray">
+    <div class="left">
+      {{ page.date | date_to_string }}
+
+      {% if page.updated %}
+      updated
+      {{ page.updated }}
+      {% endif %}
+    </div>
+
+    <div class="right">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-count="none" data-via="henrikenggaard">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  {{ content }}
+
+  <div class="sticker">
+    Questions and comments on Twitter <a href="http://twitter.com/henrikenggaard">@henrikenggaard</a>
+  </div>
+</div>
+

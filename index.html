@@ -1,0 +1,13 @@
+---
+layout: default
+title: The primary page of my website, the top of the hierarchy: the so-called front page.
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li class="clicky" onclick="location.href='{{ post.url }}'">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date_to_string }}</span>
+    </li>
+  {% endfor %}
+</ul>

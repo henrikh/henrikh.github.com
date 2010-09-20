@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang="en" lang="en-us"> 
+  <head> 
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' /> 
+    <meta name="Description" content="{{ description }}">
+    <title>{{ page.title }}</title> 
+
+   	<link href="http://feeds.feedburner.com/Sirupsen" rel="alternate" title="Sirupsen" type="application/atom+xml" />
+
+    <!-- Main CSS -->
+    <link href='/static/css/style.css' rel='stylesheet' />
+    <link href='/static/css/syntax.css' rel='stylesheet' /> 
+  </head> 
+  <body> 
+    <div id="wrapper">
+      <div id="contact">
+        <ul id="essentials">
+          <li id="name"><a href="/">Henrik Enggaard Hansen</a></li>
+          <li><a href="mailto:henrik.enggaard@gmail.com">henrik.enggaard@gmail.com</a></li>
+        </ul>
+
+
+        <ul id="links">
+          <li><a href="http://twitter.com/henrikenggaard">Twitter</a></li>
+          <li><a href="http://github.com/henrikh">Github</a></li>
+        </ul>
+      </div>
+
+      <div id='container'> 
+        {{ content }}
+      </div>
+    </div>
+
+  </body> 
+</html> 
